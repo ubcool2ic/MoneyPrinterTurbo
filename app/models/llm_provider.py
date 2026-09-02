@@ -379,8 +379,9 @@ LLM_PROVIDER_REGISTRY = (
         "openrouter",
         "OpenRouter",
         api_key_url="https://openrouter.ai/settings/keys",
-        default_model="minimax/minimax-m3:free",
+        default_model="z-ai/glm-5.3-flash",
         default_base_url="https://openrouter.ai/api/v1",
+        deprecated_models=("minimax/minimax-m3:free",),
     ),
     # 本地部署与通用网关
     LLMProviderSpec(
